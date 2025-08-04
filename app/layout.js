@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <SidebarProvider>
           <AppSidebar />
 
-          <main>
+          <main className="container mx-auto px-0 ">
             <nav className="flex justify-between bg-white p-3 md:hidden">
               <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-red-500 to-blue-600 bg-clip-text text-transparent">
                 Finance Master

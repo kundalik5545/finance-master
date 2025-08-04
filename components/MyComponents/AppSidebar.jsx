@@ -51,12 +51,6 @@ export function AppSidebar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isMobile, collapsed]);
 
-  useEffect(() => {
-    if (isMobile) {
-      setCollapsed(true); // Close sidebar on route change
-    }
-  }, [pathname, isMobile]);
-
   return (
     <div className="sidebar-container">
       <Sidebar
