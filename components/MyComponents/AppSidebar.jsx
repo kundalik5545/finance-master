@@ -11,6 +11,7 @@ import {
   Search,
   Calendar,
   ChevronLeft,
+  User,
 } from "lucide-react";
 import {
   Sidebar,
@@ -55,7 +56,7 @@ export function AppSidebar() {
     <div className="sidebar-container">
       <Sidebar
         className={`fixed top-0 left-0 h-screen z-50 transition-all duration-300
-          ${isMobile ? "w-80" : collapsed ? "w-24" : "w-64"}
+          ${isMobile ? "w-80" : collapsed ? "w-24" : "w-72"}
           ${isMobile && collapsed ? "-translate-x-full" : "translate-x-0"}
           bg-gradient-to-b from-gray-50 to-white border-r border-gray-200 shadow-xl flex flex-col
         `}
@@ -217,6 +218,7 @@ const items = [
   { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
   { title: "Add Transactions", url: "/add-transactions", icon: CirclePlus },
   { title: "Add Banks", url: "/add-bank-account", icon: Plus },
+  { title: "Add User", url: "/add-user", icon: User },
   { title: "To Do List", url: "/to-do-list", icon: List },
   {
     title: "Upload Bulk Trans",

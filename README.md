@@ -66,3 +66,7 @@ Now run this command to migrate scheme to postgress
 ```npm
 npx prisma migrate dev --name init
 ```
+
+## Use form builder
+
+https://www.shadcn-form.com/playground
