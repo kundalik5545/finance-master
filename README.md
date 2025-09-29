@@ -1,4 +1,8 @@
 # Finance Master Setup
+## Notes
+ 1. Has some functionality builted
+ 2. Not completed
+
 
 ## Steps to create Finance Master
 
