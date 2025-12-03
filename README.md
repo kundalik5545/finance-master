@@ -1,8 +1,6 @@
 # Finance Master Setup
-## Notes
- 1. Has some functionality builted
- 2. Not completed
 
+App is not completed just created boiler plate with database and shadcn template.
 
 ## Steps to create Finance Master
 
@@ -17,7 +15,6 @@
 
 1. Prisma
 2. Shadcn
-3.
 
 ### Shadcn command
 
