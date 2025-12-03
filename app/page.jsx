@@ -5,7 +5,7 @@ export default function Home() {
         {/* Hero Section */}
         <header className="flex flex-col items-center justify-center py-16 md:py-24 border-b border-gray-200 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-            Finance Master
+            Finance Masters
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mb-6">
             Take control of your finances with an all-in-one platform that helps

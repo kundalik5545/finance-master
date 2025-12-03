@@ -1,15 +1,10 @@
 "use server";
 import prisma from "@/DB/db.config";
 
-export const createNewUser = async () => {
+export const createNewUser = async (data) => {
   try {
     const createUser = await prisma.user.create({
-      data: {
-        firstName: "Kundalik",
-        lastName: "Jadhav",
-        email: "kundalik1@fm.com",
-        phone: "7030640807",
-      },
+      data,
     });
 
     return { success: true, message: "user created!!", newUser: createUser };

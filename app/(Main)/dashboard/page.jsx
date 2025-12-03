@@ -6,8 +6,8 @@ const DashboarPage = () => {
     { firstName: "akshay", lastName: "jadhav" },
   ];
   return (
-    <div>
-      <h1>Dashboard Page</h1>
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold mb-4">Dashboard Pagesssssss</h1>
 
       {users.map((user, i) => (
         <p key={i}>

@@ -1,15 +1,9 @@
 "use client";
-import { useState } from "react";
-import { toast } from "sonner";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { cn } from "@/lib/utils";
+import { createNewUser } from "@/actions/user";
 import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -17,6 +11,10 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { PhoneInput } from "@/components/ui/phone-input";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
+import { z } from "zod";
 
 const formSchema = z.object({
   firstName: z.string().min(1),
@@ -30,8 +28,10 @@ export default function AddUserForm() {
     resolver: zodResolver(formSchema),
   });
 
-  function onSubmit(values) {
+  async function onSubmit(values) {
     try {
+      await createNewUser(values);
+      toast.success("User added successfully!");
       console.log(values);
     } catch (error) {
       console.error("Form submission error", error);
